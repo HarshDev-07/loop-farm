@@ -1,0 +1,24 @@
+{
+  "id": 4,
+  "title": "Harvest Time",
+  "concept": "loops with harvest",
+  "story": "The crops in the top row are ripe. Harvest all 7 of them and earn 7 coins. Each harvest call earns 1 coin.",
+  "hint": "Use a for loop that runs 7 times. Call harvest(), then moveRight().",
+  "gridWidth": 7,
+  "gridHeight": 3,
+  "start": { "x": 0, "y": 0 },
+  "tiles": [
+    "RRRRRRR",
+    ".......",
+    "......."
+  ],
+  "goal": {
+    "type": "harvestCount",
+    "count": 7
+  },
+  "api": ["moveRight", "moveLeft", "moveUp", "moveDown", "harvest"],
+  "requireConstructs": ["for"],
+  "parLines": 4,
+  "maxActions": 500,
+  "starterCode": "// Harvest all 7 ripe crops in the top row.\n"
+}

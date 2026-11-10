@@ -1,0 +1,28 @@
+{
+  "id": 2,
+  "title": "Too Much Typing",
+  "concept": "for loops",
+  "story": "The farmer must plant 8 seeds in a row. Typing plant() eight times is slow and error-prone. Use a loop to repeat the work.",
+  "hint": "for (let i = 0; i < 8; i++) { ... } repeats the code inside 8 times.",
+  "gridWidth": 8,
+  "gridHeight": 3,
+  "start": { "x": 0, "y": 0 },
+  "tiles": [
+    "........",
+    "........",
+    "........"
+  ],
+  "goal": {
+    "type": "fieldPattern",
+    "pattern": [
+      "ssssssss",
+      "........",
+      "........"
+    ]
+  },
+  "api": ["moveRight", "moveLeft", "moveUp", "moveDown", "plant"],
+  "requireConstructs": ["for"],
+  "parLines": 4,
+  "maxActions": 500,
+  "starterCode": "// Plant 8 seeds in the top row.\n// Hint: use a for loop!\n"
+}

@@ -1,0 +1,56 @@
+/* ============================================================
+   Design tokens — Loop Farm
+   All colours, type, spacing and shape live here.
+   ============================================================ */
+
+/* Fonts */
+@import '@fontsource/bricolage-grotesque/700.css';
+@import '@fontsource/atkinson-hyperlegible/400.css';
+@import '@fontsource/atkinson-hyperlegible/700.css';
+@import '@fontsource/jetbrains-mono/400.css';
+
+:root {
+  /* -- Colour palette -- */
+  --ink:          #1b2433;
+  --slate:        #222d42;
+  --slate-line:   #34425d;
+  --chalk:        #f5f7ef;
+  --meadow:       #98d160;
+  --meadow-deep:  #6fb04a;
+  --furrow:       #7a5238;
+  --furrow-alt:   #6f4a32;
+  --furrow-wet:   #4a3123;
+  --sunflower:    #f4c430;
+  --radish:       #d8365d;
+  --radish-text:  #b02548;
+  --leaf:         #3e9d4f;
+  --stone:        #8b929c;
+  --sky:          #bfe6f2;
+
+  /* -- Type scale -- */
+  --text-sm:   14px;
+  --text-base: 16px;
+  --text-md:   20px;
+  --text-lg:   25px;
+  --text-xl:   31px;
+
+  /* -- Spacing -- */
+  --sp-1:  4px;
+  --sp-2:  8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-6: 24px;
+  --sp-8: 32px;
+  --sp-12: 48px;
+
+  /* -- Radii by job -- */
+  --r-btn:    999px;   /* buttons = pills */
+  --r-node:   999px;   /* level trail nodes = circles */
+  --r-editor:   4px;   /* editor panel, message area = square-ish */
+  --r-tile:     6px;   /* canvas tiles */
+  --r-modal:   12px;   /* modal */
+
+  /* -- Transitions -- */
+  --t-quick: 120ms ease;
+  --t-btn:   120ms ease;
+}

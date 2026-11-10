@@ -1,0 +1,28 @@
+{
+  "id": 3,
+  "title": "Water Works",
+  "concept": "loops with two actions",
+  "story": "Seeds need water to grow. Plant a seed, then water it, for each of the 6 tiles in the row. A single loop can do both steps.",
+  "hint": "Put both plant() and water() inside the same loop body.",
+  "gridWidth": 6,
+  "gridHeight": 3,
+  "start": { "x": 0, "y": 0 },
+  "tiles": [
+    "......",
+    "......",
+    "......"
+  ],
+  "goal": {
+    "type": "fieldPattern",
+    "pattern": [
+      "RRRRRR",
+      "......",
+      "......"
+    ]
+  },
+  "api": ["moveRight", "moveLeft", "moveUp", "moveDown", "plant", "water"],
+  "requireConstructs": ["for"],
+  "parLines": 5,
+  "maxActions": 500,
+  "starterCode": "// Plant and water all 6 tiles in the top row.\n"
+}

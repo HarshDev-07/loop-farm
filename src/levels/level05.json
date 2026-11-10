@@ -1,0 +1,30 @@
+{
+  "id": 5,
+  "title": "Rows and Columns",
+  "concept": "nested loops",
+  "story": "Rows go across, columns go down. One loop for each direction covers every tile in the whole field.",
+  "hint": "Use goTo(x, y) inside two nested for loops — one for y (rows) and one for x (columns).",
+  "gridWidth": 5,
+  "gridHeight": 4,
+  "start": { "x": 0, "y": 0 },
+  "tiles": [
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "goal": {
+    "type": "fieldPattern",
+    "pattern": [
+      "sssss",
+      "sssss",
+      "sssss",
+      "sssss"
+    ]
+  },
+  "api": ["goTo", "plant", "GRID_WIDTH", "GRID_HEIGHT"],
+  "requireConstructs": ["for"],
+  "parLines": 6,
+  "maxActions": 500,
+  "starterCode": "// Plant every tile using two nested for loops.\n// Use GRID_WIDTH and GRID_HEIGHT.\n"
+}

@@ -1,0 +1,28 @@
+{
+  "id": 1,
+  "title": "First Seeds",
+  "concept": "sequencing",
+  "story": "The farmer needs to plant three seeds in a row. Tell the farmer exactly what to do, one step at a time.",
+  "hint": "Call plant() to plant, then moveRight() to move to the next tile.",
+  "gridWidth": 5,
+  "gridHeight": 3,
+  "start": { "x": 0, "y": 0 },
+  "tiles": [
+    ".....",
+    ".....",
+    "....."
+  ],
+  "goal": {
+    "type": "fieldPattern",
+    "pattern": [
+      "sss..",
+      ".....",
+      "....."
+    ]
+  },
+  "api": ["moveRight", "moveLeft", "moveUp", "moveDown", "plant"],
+  "requireConstructs": [],
+  "parLines": 5,
+  "maxActions": 100,
+  "starterCode": "// Plant 3 seeds in the top row.\n// Use plant() and moveRight().\n"
+}

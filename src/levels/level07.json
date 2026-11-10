@@ -1,0 +1,36 @@
+{
+  "id": 7,
+  "title": "Stripes",
+  "concept": "loop steps",
+  "story": "Plant and water every other row to create stripes. The loop step y += 2 skips a row on each pass.",
+  "hint": "Use y += 2 in the outer loop to skip every other row.",
+  "gridWidth": 7,
+  "gridHeight": 7,
+  "start": { "x": 0, "y": 0 },
+  "tiles": [
+    ".......",
+    ".......",
+    ".......",
+    ".......",
+    ".......",
+    ".......",
+    "......."
+  ],
+  "goal": {
+    "type": "fieldPattern",
+    "pattern": [
+      "RRRRRRR",
+      ".......",
+      "RRRRRRR",
+      ".......",
+      "RRRRRRR",
+      ".......",
+      "RRRRRRR"
+    ]
+  },
+  "api": ["goTo", "plant", "water", "GRID_WIDTH", "GRID_HEIGHT"],
+  "requireConstructs": ["for"],
+  "parLines": 8,
+  "maxActions": 500,
+  "starterCode": "// Plant and water rows 0, 2, 4, 6.\n// Hint: use y += 2 in the outer loop.\n"
+}

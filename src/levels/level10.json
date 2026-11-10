@@ -1,0 +1,29 @@
+{
+  "id": 10,
+  "title": "The Big Harvest",
+  "concept": "functions with everything",
+  "story": "The whole 8x8 field needs tending. Write a function that plants, waters, and harvests one tile, then call it for every non-rock tile.",
+  "hint": "Write a function tend(x, y) that calls goTo, plant, water, and harvest. Then call it inside two nested loops.",
+  "gridWidth": 8,
+  "gridHeight": 8,
+  "start": { "x": 0, "y": 0 },
+  "tiles": [
+    "...#....",
+    "........",
+    ".......#",
+    "........",
+    "..#.....",
+    ".....#..",
+    "........",
+    "#.....#."
+  ],
+  "goal": {
+    "type": "harvestCount",
+    "count": 58
+  },
+  "api": ["goTo", "plant", "water", "harvest", "isRock", "GRID_WIDTH", "GRID_HEIGHT"],
+  "requireConstructs": ["function", "for", "if"],
+  "parLines": 14,
+  "maxActions": 1000,
+  "starterCode": "// Tend every non-rock tile.\n// Hint: write a function tend(x, y) that does all the work.\n"
+}

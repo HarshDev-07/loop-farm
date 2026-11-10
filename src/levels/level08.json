@@ -1,0 +1,24 @@
+{
+  "id": 8,
+  "title": "Walk Until the Fence",
+  "concept": "while loops",
+  "story": "The row is 12 tiles wide, but you don't know the exact number. Use while and canMove to keep going until you hit the fence.",
+  "hint": "while (canMove('right')) keeps going until there is a fence ahead.",
+  "gridWidth": 12,
+  "gridHeight": 3,
+  "start": { "x": 0, "y": 0 },
+  "tiles": [
+    "RRRRRRRRRRRR",
+    "............",
+    "............"
+  ],
+  "goal": {
+    "type": "harvestCount",
+    "count": 12
+  },
+  "api": ["moveRight", "moveLeft", "moveUp", "moveDown", "harvest", "canMove"],
+  "requireConstructs": ["while"],
+  "parLines": 6,
+  "maxActions": 500,
+  "starterCode": "// Harvest all crops in the top row.\n// Don't use a number — use canMove('right') instead.\n"
+}
