@@ -123,7 +123,7 @@ src/
 
 ### Installation
 ```bash
-git clone https://github.com/YOUR-USERNAME/loop-farm.git
+git clone [https://github.com/HarshDev-07/loop-farm.git]
 cd loop-farm
 npm install
 ```
@@ -199,7 +199,7 @@ Because Loop Farm has no backend requirements, you can embed it inside an educat
 
 ```html
 <iframe
-  src="https://YOUR-USERNAME.github.io/loop-farm/"
+  src="[https://github.com/HarshDev-07/loop-farm.git]"
   width="100%"
   height="720"
   style="border: 0; border-radius: 8px; overflow: hidden;"
